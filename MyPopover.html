@@ -1,37 +1,9 @@
 <!DOCTYPE html>
 <html>
    <head>
+     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
   <script type="text/javascript" charset="utf-8" src="jquery-1.12.0.min.js"></script>
-  <style type="text/css">
-		body {
-			color: #333;
-			font-family: tahoma;
-			font-size: 10px;
-			background: #F7F7F7;
-		}
-    a {
-      display: block;
-    }
-  </style>
-	<script type="text/javascript" charset="utf-8">
-  function test() {
-    var search = $("input").val();
-    var url_search = "https://developer.mozilla.org/en-US/search.json?q=" + search;
-    $.getJSON(url_search, function(data){
-      console.log(url_search);
-      for (var i = 0; i < data.documents.length; i++) {
-        console.log(JSON.stringify(data.documents[i].title));
-        var a             = document.createElement("a");
-        var linkName      = document.createTextNode(data.documents[i].title);
-        var linkUrl       = data.documents[i].url;
-        a.appendChild(linkName);
-        a.title = linkName;
-        a.href  = linkUrl;
-        $('.content').append(a);
-      };
-    });
-  };
-	</script>
+  <script src="script.js" charset="utf-8"></script>
    </head>
    <body>
    	<input type="text" name="search" value="transform-origin"><button onclick="test()">search</button>
