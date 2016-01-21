@@ -14,8 +14,11 @@ function search() {
         var a             = document.createElement("a");
         var linkName      = document.createTextNode(data.documents[i].title);
         var linkUrl       = data.documents[i].url;
+        // var p             = document.createElement("p");
+        var excerpt       = data.documents[i].excerpt;
         var el            = document.createElement("div");
         a.appendChild(linkName);
+        a.appendChild(excerpt);
         a.href            = linkUrl;
         el.appendChild(a);
         el.className      = "el";
@@ -25,7 +28,5 @@ function search() {
     function emptySearchContent() {
       $('.content').children().remove();
     };
-
-
   });
 };

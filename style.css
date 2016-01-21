@@ -1,8 +1,9 @@
 body {
   color: #333;
   font-family: 'Roboto', Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   background: #F3F3F3;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -11,26 +12,62 @@ a {
   color: #333;
 }
 
+.top {
+  background-color: #3498db;
+  width: 100%;
+  padding: 10px;
+}
+
+.top input {
+  display: inline;
+  margin: 0;
+  font-size: 14px;
+  padding: 6px;
+  width: 200px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+  border-radius: 2px;
+}
+
+.top input:focus {
+    outline: none;
+}
+
+.top button {
+  display: inline;
+  margin: 0;
+  height: 30px;
+  background-color:#fff;
+  border: 0px;
+  text-decoration: none;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
 .el {
   margin: 5px;
   padding: 10px;
-  background: #FFFFFF;
   box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.06);
   border-radius: 2px;
   opacity: 0;
-  animation: fadeIn .1s linear forwards;
+  background-color: white;
+  animation: fadeIn .125s linear forwards;
+  border-left: solid 2px white;
+  transition:all .25s ease-out;
 }
 
 .el:hover {
-  font-size: 14px;
-  transition: 125ms;
+  border-left: solid 2px #3498db;
 }
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
