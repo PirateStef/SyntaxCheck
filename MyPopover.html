@@ -6,7 +6,8 @@
   <script src="script.js" charset="utf-8"></script>
 </head>
 <body>
-  <input type="text" name="search" value="transform-origin"><button onclick="test()">search</button>
+  <input type="text" name="search" value="transform-origin"  onkeydown = "if (event.keyCode == 13)document.getElementById('btnSearch').click()">
+  <button id="btnSearch" onclick="search()" type="submit" name="search">search</button>
   <div class="content"></div>
 </body>
 </html>
