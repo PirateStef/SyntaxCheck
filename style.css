@@ -1,4 +1,4 @@
-body {
+.extension_body {
   color: #333;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-size: 14px;
@@ -7,9 +7,19 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a {
+.extension_body a {
   text-decoration: none;
   color: #333;
+}
+
+.extension_body h4 {
+  margin-bottom: 0;
+}
+
+.extension_body p {
+  color: #BFBFBF;
+  margin-top: 5px;
+  white-space: normal;
 }
 
 .top {
@@ -26,7 +36,7 @@ a {
   width: 200px;
   border: solid 1px #dcdcdc;
   transition: box-shadow 0.3s, border 0.3s;
-  border-radius: 2px;
+  border-radius: 3px 0px 0px 3px;
 }
 
 .top input:focus {
@@ -36,10 +46,17 @@ a {
 .top button {
   display: inline;
   margin: 0;
-  height: 30px;
-  background-color:#fff;
+  height: 32px;
+  width: 70px;
+  background-color:#2E81B8;
+  color: white;
+  font-size: 14px;
   border: 0px;
   text-decoration: none;
+  position: relative;
+  left: -8px;
+  top: 0px;
+  border-radius: 0px 3px 3px 0px;
 }
 
 .myButton:active {
@@ -50,7 +67,7 @@ a {
 
 .el {
   margin: 5px;
-  padding: 10px;
+  padding: 5px;
   box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.06);
   border-radius: 2px;
   opacity: 0;

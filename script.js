@@ -13,13 +13,18 @@ function search() {
       for (var i = 0; i < data.documents.length; i++) {
         var a             = document.createElement("a");
         var linkName      = document.createTextNode(data.documents[i].title);
+        var h4            = document.createElement("h4");
         var linkUrl       = data.documents[i].url;
-        // var p             = document.createElement("p");
-        var excerpt       = data.documents[i].excerpt;
+        var p             = document.createElement("p");
+        var description   = document.createTextNode(data.documents[i].slug);
         var el            = document.createElement("div");
-        a.appendChild(linkName);
-        a.appendChild(excerpt);
+
+        p.appendChild(description);
+        console.log(p);
+        h4.appendChild(linkName);
+        a.appendChild(h4);
         a.href            = linkUrl;
+        a.appendChild(p);
         el.appendChild(a);
         el.className      = "el";
         $('.content').append(el);
