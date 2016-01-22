@@ -26,12 +26,12 @@ function search() {
         a.href            = linkUrl;
         a.appendChild(p);
         el.appendChild(a);
-        el.className      = "el";
-        $('.content').append(el);
+        el.className      = "extension_el";
+        $('.extension_content').append(el);
       };
     };
     function emptySearchContent() {
-      $('.content').children().remove();
+      $('.extension_content').children().remove();
     };
   });
 };

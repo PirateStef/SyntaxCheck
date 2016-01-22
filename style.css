@@ -22,13 +22,13 @@
   white-space: normal;
 }
 
-.top {
+.extension_top {
   background-color: #3498db;
   width: 100%;
   padding: 10px;
 }
 
-.top input {
+.extension_top input {
   display: inline;
   margin: 0;
   font-size: 14px;
@@ -39,11 +39,11 @@
   border-radius: 3px 0px 0px 3px;
 }
 
-.top input:focus {
+.extension_top input:focus {
     outline: none;
 }
 
-.top button {
+.extension_top button {
   display: inline;
   margin: 0;
   height: 32px;
@@ -59,13 +59,7 @@
   border-radius: 0px 3px 3px 0px;
 }
 
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-
-
-.el {
+.extension_el {
   margin: 5px;
   padding: 5px;
   box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.06);
@@ -77,7 +71,7 @@
   transition:all .25s ease-out;
 }
 
-.el:hover {
+.extension_el:hover {
   border-left: solid 2px #3498db;
 }
 
