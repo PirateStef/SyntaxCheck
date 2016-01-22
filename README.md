@@ -7,4 +7,4 @@ This extension makes it easy to search Mozilla Developer Network. Just click the
 
 I haven't signed up for a developer account yet. Install it by using the Safari extension builder. If you have any questions send me a message.
 
-[[https://github.com/PirateStef/SyntaxCheck/blob/master/animation.gif|alt=animation]]
+![movie](https://github.com/PirateStef/SyntaxCheck/blob/master/animation.gif)
