@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+  <script type="text/javascript" charset="utf-8" src="jquery-1.12.0.min.js"></script>
+  <script src="script.js" charset="utf-8"></script>
+</head>
+<body class="extension_body">
+  <div class="extension_top">
+    <input type="text" name="search" placeholder="search MDN"  onkeydown = "if (event.keyCode == 13)document.getElementById('extension_btnSearch').click()">
+    <button id="extension_btnSearch" onclick="search()" type="submit" name="search">search</button>
+  </div>
+  <div class="extension_content"></div>
+</body>
+</html>
